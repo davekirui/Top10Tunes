@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<title>Top ten tunes</title> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.2.0.css" />
+
+	<script src="js/jquery.js"></script>
+
+	<script src="js/jquery.mobile-1.2.0.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+$("#list,#about,#guide,#home,#list1").click(function(){
+$.mobile.showPageLoadingMsg('c', "Loading...", true);
+setTimeout( function() { $.mobile.hidePageLoadingMsg(); }, 2000 );
+});
+});
+</script>
+
+    
+    <style type="text/css">
+.ui-page.ui-body-c {
+    background:url(css/themes/default/images/pa.jpg);
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover;  
+}
+
+</style>
+    
+	</head> 
+<body> 
+	
+	<div data-role="page" >
+	
+		<div data-role="header" data-position="fixed" data-theme="b" style="">
+                    <div data-role="navbar">
+<ul>
+<li><a href="index.html" data-icon="home" rel="external" data-ajax="false" id="home">Home</a></li>
+<li><a href="list.html" rel="external" data-ajax="false" data-icon="grid" id="list1">List of top 10</a></li>
+</ul>
+</div>
+			<h1>DJ Pascoe's Top 10 Tunes</h1>
+
+		</div>
+	
+		<div data-role="content" style="text-align:center">	
+			<p align="center">
+           
+  <a href="list.html" data-role="button" data-icon="grid" rel="external" data-ajax="false" id="list" data-transition="none">List of top 10 categories</a>
+  <a href="about.html" data-role="button" data-icon="info" rel="external" data-ajax="false"  id="about" data-transition="none">About</a>
+           <a href="guide.html" data-role="button" data-icon="arrow-d" rel="external" data-ajax="false" id="guide" data-transition="none">Guide</a>
+         
+            
+            </p>		
+		</div><!-- /content -->
+		
+		<div data-role="footer" data-position="fixed" data-theme="b">
+          
+         <table>
+         <tr>
+         <td >
+          <img src="css/themes/default/images/logo.png" width="160" height="55.12"/>
+          </td>
+          <td>
+          &copy;MLIMB Limited
+          </td>
+          </tr>
+         
+         </table> 
+		</div>
+	
+	</div><!-- /page -->
+
+</body>
+</html>
