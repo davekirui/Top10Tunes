@@ -22,15 +22,14 @@
 <ol>
 <?php
 	  while($list=mysql_fetch_array($sql))
-	  { 	
+	  { 	  	
 	  ?>  
-	 <li><a href='<?php echo $list['youtube']?>'> <?php echo $list['song'] ?> </a> - <?php echo $list['info'] ?></li>
+	 <li><a href="http://top10tunes.com/vid.php?id=<?php echo $list['id']?>&youtube=<?php echo $list['youtube']?>"> <?php echo $list['song'] ?></a> - <?php echo $list['info'] ?></li>
 	 <?php 
 	  }
 
 ?>
 </ol>
-
 
 </body>
 </html>
