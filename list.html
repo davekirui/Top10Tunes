@@ -36,7 +36,8 @@ $.ajaxSetup({
 $.ajax({
 
 type: "POST",
-url: "http://top10tunes.com/ajax.php",
+//http://top10tunes.com/ajax.php
+url: "ajax.php",
 data: "category="+category,
 
 success: function(html){
@@ -132,8 +133,6 @@ return false;
 <option>Rare Groove</option>
 <option>Reggae</option>
 <option>Reggae Revival</option>
-<option>Table of Contents</option>
-<option>Categories By Genre</option>
 <option>Reggaeton</option>
 <option>Rock (Classic)</option>
 <option>Rock (North American Indie)</option>
@@ -163,7 +162,18 @@ return false;
 <option>St. Patrick's Day</option>
 <option>Valentine's Day</option>
 <option>Woodstock</option>
+<option>1920s</option>
+<option>1930s</option>
+<option>1940s</option>
+<option>1950s</option>
+<option>1960s</option>
+<option>1970s</option>
+<option>1980s</option>
+<option>1990s</option>
 <option>Noughties</option>
+<option>2010</option>
+<option>2011</option>
+<option>2012</option>
 <option>Anniversary</option>
 <option>Divorce</option>
 <option>End The Party (The Last Song)</option>
@@ -175,7 +185,7 @@ return false;
 <option>Wedding (First Dance)</option>
 <option>Outro</option>
 <option>Photo/Image Credits</option>
-<option>Acknowledgements</option>
+
 
 </select>
 
